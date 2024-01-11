@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
   
     role: {
         type: String, // ["USER", "ADMIN", "MANGER"]
-        enum: [userRoles.USER, userRoles.ADMIN, userRoles.MANGER,userRoles.SELLER],
+        enum: [userRoles.USER, userRoles.ADMIN, userRoles.MANGER,userRoles.SELLER, userRoles.DELIVERY],
         default: userRoles.USER
     },
     avatar: {

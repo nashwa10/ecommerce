@@ -33,11 +33,15 @@ const tagsRouter = require('./routes/tags.route');
 const productsRouter = require('./routes/products.route');
 const categoriesRouter = require('./routes/categories.route');
 const cartsRouter = require('./routes/carts.route');
-
+const shippingRouter=require('./routes/shipping.route');
+const ordersRouter=require('./routes/orders.route');
   
 app.use('/api/courses', coursesRouter) // /api/courses
+app.use('/api/orders', ordersRouter) // /api/courses
 
 app.use('/api/users', usersRouter) // /api/users
+app.use('/api/shipping', shippingRouter) // /shipping
+
 
 app.use('/api/products', productsRouter) // /api/products
 

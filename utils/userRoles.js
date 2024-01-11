@@ -3,6 +3,7 @@ const userRoles = {
     BUYER: "BUYER",
     MANGER: "MANGER",
     SELLER: "SELLER",
+    DELIVERY: "DELIVERY" 
 }
 
 
